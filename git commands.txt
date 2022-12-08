@@ -1,0 +1,68 @@
+Important Git commands ->
+
+git init
+git status
+git add --a -> to add all files in staging area
+git add .
+git add <file-name> -> to add a specific file to staging area
+git commit -m "<message>"
+git log -> shows all previous commits
+rm -rf .git -> to delete everything including git repository
+git clone <url> -> to clone the repository
+git clone <url> <name> -> to give name to folder
+git rm --cached <file-name> -> to unstage the file
+
+To Ignore a file->
+1) Create a file .gitignore (touch .gitignore)
+2) Enter the name of file inside .gitignore file that we want to ignore 
+3) It will start ignoring the mentioned file
+
+To Ignore multiple files ->
+1) Go inside .gitignore file
+2) use *.log
+3) It will ignore all the files with extension .log
+
+To ignore a directory->
+1) Go inside .gitignore file and give folder path
+2) dir/
+3) dir/dir1 -> ignores entire folder
+4)To ignore only outer folder folder->
+	/dir/
+
+git diff -> to see the difference between staged and unstaged(working directory) file versions
+
+git diff --staged -> diff betn last comit and current staging area
+git diff HEAD -> it will show all changes to tracked files
+
+Skipping Staging area ->
+git commit -a -m "Direct commit"
+
+git rm <filename> -> to delete a file
+git mv <filename> <new_filename> -> to rename filename to new_filename
+
+git rm --cached <filename> -> To untrack the file and ignore file
+
+git log -p -> shows which line as added and which one is removed
+
+git log --stat -> shows details in short about commits
+
+git log --pretty=oneline -> shows one commit per one line
+
+git log --pretty=short -> shows details of commits in short
+git log --pretty=full -> shows full information
+git log --since=2.days -> shows commits in last two days
+git log --pretty=format:"%h -- %an" ->
+  %h -> hash commit
+  %an ->name
+hash -- name
+an - author name
+ae -author email
+
+git commit --amend -> to modify previous commits
+
+
+
+
+
+
+

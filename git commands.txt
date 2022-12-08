@@ -62,6 +62,7 @@ git commit --amend -> to modify previous commits
 git restore --staged <filename> -> To unstage a file from staging area
 git checkout -- <filename> ->(only applicable to unstaged files) 
 to undo the previous changes made to a file
+git checkout -f -> to undo all changed files
 
 
 

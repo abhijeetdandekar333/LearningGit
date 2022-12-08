@@ -59,6 +59,11 @@ an - author name
 ae -author email
 
 git commit --amend -> to modify previous commits
+git restore --staged <filename> -> To unstage a file from staging area
+git checkout -- <filename> -> to undo the previous changes made to a file
+
+
+
 
 
 
